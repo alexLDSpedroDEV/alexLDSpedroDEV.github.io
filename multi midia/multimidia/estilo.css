@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+.title{
+    color: white;
+    z-index: 1;
+    text-align: center;    
+    font-size: 8vw;
+} 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    animation: gradient 10s infinite;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(-45deg, #e0933a, #b617ae,#23a6d5,#23d5ab) no-repeat;
+    background-size: 300% 300%;
+    
+    
+   
+}
+.decoration{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.decoration:hover{
+    text-decoration: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #ffffff;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #23a5d500;
+  margin-left: 0.1rem;
+  width: 70px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+.animationButton{
+  -webkit-animation:bounce-top 
+  1s linear 2s both;
+  animation:bounce-top 5s ease-in;
+  animation-play-state:running;
+  border: 1px solid black;
+  background-color: #fdfeff00;
+  border-radius: 5px;
+}
+.animationButton:hover{
+  background-color: black;
+  color: white;
+  transition: 0.4s;
+}
+@keyframes blink {
+  0%  { background-color: transparent; }
+  49% { background-color: transparent; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: transparent; }
+}
+@keyframes gradient{
+  0%    { background-position: 0 50%; }
+  50%   { background-position: 100% 50%; }
+  100%  { background-position: 0 50%; }
+}
+
+@keyframes bounce-top {
+  0% { 
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+
+  transform: translateY(-24px);
+  animation-timing-function: ease-in;
+  }
+  65% {
+            transform: translateY(-12px);
+            animation-timing-function: ease-in;
+  }
+  82% {
+            transform: translateY(-6px);
+            animation-timing-function: ease-in;
+  }
+  93% {
+
+            transform: translateY(-4px);
+
+            animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .title{
+    color: white;
+    z-index: 1;
+    text-align: center;    
+    font-size: 12vw;
+  } 
+
+}
