@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Multi midia</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+        body {
+            font-family: 'Fredericka the Great', cursive;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            overflow: hidden;
+        }
+        .containere {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0 3rem;
+        }
+        .h1.h2 {
+            font-weight: 200;
+            margin: 0.4rem;
+        }
+        .h1 {
+            font-size: 3.5rem;
+        }
+        .h2 {
+            font-size: 2rem;
+            color:rgb(73, 66, 66);
+        }
+        .author {
+            color: rgb(180, 0, 75);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(23, 77, 32);
+        }
+
+        .fas {
+            color: rgb(0, 0, 0);
+            font-size: 3rem;
+        /*  background-color: green; conditional */
+            margin: 0px;
+            padding: 0px;
+            /*****
+            animation-name: erasing;    
+            animation-duration: 3s;
+            ***/
+        }
+        /**** this is the Pencil Erasing animation****/
+        .erasing-animation {
+            animation-name: erasing;
+            animation-duration: 1.8s;
+        }
+
+        @keyframes erasing {
+            0% {transform: rotate(0deg);}
+            10% {transform: rotate(180deg);}
+            60% {transform: rotate(180deg);}
+            70% {transform: rotate(0deg);}
+            100% {transform: rotate(0deg);}
+        } 
+            
+        /***this is the pencil writing animation*****/
+        .writing-animation {
+            animation-name: writting;    
+            animation-duration: 4s; 
+        }
+
+        @keyframes writting {
+            0%  {transform: translate(0px,0px);}
+            2%  {transform: translate(30px,-40px);}
+            4%  {transform: translate(0px,0px);}
+            6%  {transform: translate(30px,-40px);}
+            8% {transform: translate(0px,0px);}
+            10% {transform: translate(30px,-40px);}
+            12% {transform: translate(0px,0px);}
+            14% {transform: translate(30px,-40px);}
+            16% {transform: translate(0px,0px);}
+            18% {transform: translate(30px,-40px);}
+            20% {transform: translate(0px,0px);}
+            22% {transform: translate(30px,-40px);}
+            24% {transform: translate(0px,0px);}
+            26% {transform: translate(30px,-40px);}
+            28% {transform: translate(0px,0px);}
+            30% {transform: translate(30px,-40px);}
+            32% {transform: translate(0px,0px);}
+            34% {transform: translate(30px,-40px);}
+            36% {transform: translate(0px,0px);}
+            38% {transform: translate(30px,-40px);}
+            40% {transform: translate(0px,0px);}
+            42% {transform: translate(30px,-40px);}
+            44% {transform: translate(0px,0px);}
+            46% {transform: translate(30px,-40px);}
+            48% {transform: translate(0px,0px);}
+            50% {transform: translate(30px,-40px);}
+            52% {transform: translate(0px,0px);}
+            54% {transform: translate(30px,-40px);}
+            56% {transform: translate(0px,0px);}
+            58% {transform: translate(30px,-40px);}
+            60% {transform: translate(0px,0px);}
+            62% {transform: translate(30px,-40px);}
+            64% {transform: translate(0px,0px);}
+            66% {transform: translate(30px,-40px);}
+            68%{transform: translate(0px,0px);}
+        
+            70% {transform: translate(30px,-40px);}
+            72% {transform: translate(0px,0px);}
+            74% {transform: translate(30px,-40px);}
+            76% {transform: translate(0px,0px);}
+            78% {transform: translate(30px,-40px);}
+            80% {transform: translate(0px,0px);}
+            82% {transform: translate(30px,-40px);}
+            84% {transform: translate(0px,0px);}
+            86% {transform: translate(30px,-40px);}
+            88% {transform: translate(0px,0px);}
+            90% {transform: translate(30px,-40px);}
+            92% {transform: translate(0px,0px);}
+            94% {transform: translate(30px,-40px);}
+            96% {transform: translate(0px,0px);}
+            98% {transform: translate(30px,-40px);}
+            100% {transform: translate(0px,0px);}
+            
+            
+        }
+
+        @media(min-width: 1200px){
+            .h1 {
+                font-size: 5rem;
+            }
+            .fas {
+                font-size: 5rem;
+            }
+
+        }
+        @media(max-width: 800px){
+            .container {
+                padding: 0 1rem;
+            }
+            .h1 {
+                font-size: 2rem;
+            }
+            a{
+                font-size: 2em;
+            }
+            .posto{
+                display: none;
+            }
+        }
+        @media(max-width: 500px){
+            .h1 {
+                font-size: 2.7rem;
+            }
+            .h2 {
+                font-size: 1.5rem;
+            }
+            .posto{
+                display: none;
+            }
+        }
+    </style>
+    
+</head>
+<body class="container-fluid ">
+    <header class="container-fluid bg-light ">
+        <div class="container">
+            <div class="row">
+                <!-- logo do site -->
+                <div class="col p-4 fs-3 "> <img src="img/WhatsApp Image 2022-10-01 at 16.33.37.jpeg" width="70vw" alt="logo"></div>
+                
+                <!-- nav  -->
+                <nav class="navbar navbar-expand-lg navbar-light  p-4 col ">
+                    <div class="container ">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse text-end" id="navbarNavDropdown">
+                            <ul class="navbar-nav ">
+                                <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" href="main.html" >Home</a>
+                                </li>    
+                                <li class="nav-item">
+                                    <a class="nav-link active " aria-current="page" href="about.html" >About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="video.html">Vídeo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="maps.html">Prática</a>
+                                </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="container ">
+        <div class="row  " style="height: 80vh;">
+            <div class="col ">
+
+                <div class="containere">
+                    <h1 class="h1">Abastece Aki! <span class="txt-type" data-wait="2500" data-words='["Mais barato!", "Mais proximo!"]'></span><i class="fas fa-pencil-alt"></i></h1>
+                    <h2 class="h2 pt-4">Aqui você encontras os posto de gasolina mais proximos de você com os melhores preços e atendimento.</h2>
+                </div>
+            </div>
+            <div class="col posto">
+                <div class="imgPosto mt-5" style="height: 50vh;"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+        class TypeWriter {
+        constructor(txtElement, words, wait = 3000) {
+            this.txtElement = txtElement;
+            this.words = words;
+            this.txt = '';
+            //index of the the current string being typedout
+            this.wordIndex = 0;
+            //this.wait must be a base 10 interger
+            this.wait = parseInt(wait, 10);
+            //method type()
+            this.type();
+            // Boolean if the word is currently deleting
+            this.isDeleting = false;
+        }
+
+        
+        type() {
+            
+            const current = this.wordIndex % this.words.length;
+            
+            const fullTxt = this.words[current];
+
+            
+            if (this.isDeleting){
+            
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }            
+
+        
+    
+
+            
+            this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+            
+
+            let typeSpeed = 200;
+
+            
+            const typingElement = document.querySelector('.fas');
+
+            if (this.isDeleting){
+                typeSpeed /= 2;        
+            }
+     
+            if(this.isDeleting){
+                typingElement.className = "fas fa-pencil-alt erasing-animation";
+            }else{
+                typingElement.className = "fas fa-pencil-alt writing-animation";
+            }
+
+            // if word is complete
+            if(!this.isDeleting && this.txt === fullTxt){
+                // make pause at end
+                typeSpeed = this.wait;
+                //set delete to true
+                this.isDeleting = true;
+                //will stop the pencil animation after word completion
+                typingElement.className = "fas fa-pencil-alt";
+
+
+            } else if (this.isDeleting && this.txt === ''){
+                this.isDeleting = false;
+                //move to the next word in the HTML property
+                this.wordIndex++;
+                // pause time before the word start typing
+                typeSpeed = 1000;
+
+            }
+
+            setTimeout(() => this.type(), typeSpeed)
+        }
+    }
+
+
+//Init On DOM Load
+document.addEventListener('DOMContentLoaded', init);
+
+//Init App
+function init() {
+    const txtElement = document.querySelector('.txt-type');
+    // const words = JSON.parse(txtElement.getAttribute('data-words'));
+  const words = ['Mais barato!', 'Mais proximo!'];
+  
+  
+    // const wait = txtElement.getAttribute('data-wait');
+  const wait = 2500;
+    
+    new TypeWriter(txtElement, words, wait);
+}
+    </script>
+    <link rel="stylesheet" href="script.js">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

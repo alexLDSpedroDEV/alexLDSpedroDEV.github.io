@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+*{
+    margin: 0px;
+    border: 0px;
+}
+body {
+    font-family: 'Fredericka the Great', cursive;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+}
+a{
+    font-size: 1.8em;
+}
+.title{
+    z-index: 1;
+    text-align: center;    
+    font-size: 8vw;
+}
+.h1{
+    font-size: 4em;
+}
+.p{
+    font-size: 2em;
+}
+.home{
+    display: block;
+}
+.posto{
+   
+    opacity: 1; 
+    animation: slider 7s ease infinite 10s ;
+}
+.texto{
+    opacity: 1; 
+    animation: texto 8s   ;
+}
+@keyframes texto {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    50%{
+        opacity:0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slider {
+    0% {
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+
+    
+
+    50% {
+        opacity: 1;
+    }
+
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+
+  }
+
+.imgPosto{
+    background-image: url("posto.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media(max-width: 800px){
+    .container {
+        padding: 0 1rem;
+    }
+    .h1 {
+        font-size: 2rem;
+    }
+    a{
+        font-size: 2em;
+    }
+    .posto{
+        display: none;
+    }
+}
+@media(max-width: 500px){
+    .h1 {
+        font-size: 2.7rem;
+    }
+    .h2 {
+        font-size: 1.5rem;
+    }
+    .posto{
+        display: none;
+    }
+}
+.bl{
+    background-color: black;
+}
+.colors{
+    color: white;
+}
+header li a:hover{
+    font-size: 2.4em;
+    background-color: white;
+}
