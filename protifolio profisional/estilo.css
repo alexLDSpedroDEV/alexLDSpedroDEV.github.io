@@ -1,0 +1,474 @@
+body {
+    margin: 0px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+html::-webkit-scrollbar {
+    width: 1vw;
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+
+    border-radius: 15px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 0px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: white;
+    border-radius: 0px;
+}
+
+.main {
+    border: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 90vw;
+}
+
+#nav {
+    margin: 0px;
+    background-image: black;
+    height: 11vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    list-style-type: none;
+}
+
+#buttonMenuHeader {
+    display: none;
+    text-decoration: none;
+}
+
+#li {
+    display: inline-flex;
+    margin-right: 4vw;
+    padding: 7px;
+    background-color: black;
+    border-radius: 3px;
+    color: white;
+}
+
+#li:hover {
+    background: white;
+    padding: 12px;
+    color: black;
+    transition: 0.4s;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+#sectionName {
+    height: 88vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+#containerName {
+
+    display: grid;
+    justify-content: center;
+    width: 40vw;
+}
+
+#nomeSectionName {
+    text-align: start;
+}
+
+#aboutMe {
+    height: 99vh;
+    width: 90vw;
+    border-bottom: 1px solid white;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: rgb(194, 185, 185);
+}
+
+#name {
+    text-align: start;
+    font-size: 40px;
+    color: rgb(87, 198, 241);
+}
+
+#contatoLinkedin {
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(57, 209, 214);
+    border-radius: 5px;
+    padding: 12px;
+    margin-right: 2vw;
+}
+
+#contatogithub {
+    text-align: start;
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgb(201, 47, 221);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#contatogithub:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+#contatoLinkedin:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+#imagenPessoal {
+    overflow: hidden;
+    height: 84vh;
+}
+
+#bordaImg {
+    margin-top: 4vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+    height: 52vh;
+    border: 1px solid rgb(87, 198, 241);
+}
+
+#texto {
+    height: 100vh;
+    width: 60vw;
+    margin: 0px;
+    margin-left: 4px;
+    text-align: start;
+}
+
+.skills {
+    margin: 0px;
+    background: black;
+    height: 100%;
+    min-height: 100vh;
+    width: 90vw;
+    color: white;
+    text-align: center;
+}
+
+#conteinerConhecimento {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#conhecimentoQuadrados {
+
+    display: inline-block;
+    width: 20vw;
+    height: 30vh;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: 8px;
+
+}
+
+.javaScript {
+    display: none;
+    color: red;
+}
+
+.contact-me {
+    border-bottom: 1px solid white;
+    height: 82vh;
+    width: 90vw;
+    color: white;
+    text-align: center;
+}
+
+#conteinerContactMe {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+
+}
+
+.projetos {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 20vw;
+    height: 30vh;
+    border: 1px solid white;
+}
+
+.contactText {
+    display: block;
+    color: red;
+    transform: rotate(-45deg);
+}
+
+#divContactMe {
+    height: 70vh;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+}
+
+#contactUl {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-decoration: none;
+}
+
+#contactUl1 {
+    display: grid;
+    grid-template-rows: auto auto;
+
+}
+
+.links {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.linkli:hover {
+
+    color: black;
+}
+
+.h1 {
+    background: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media screen and (max-width: 830px) {
+    body {
+        background-color: black;
+    }
+
+    #nav {
+        margin: 0px;
+        background-image: black;
+        height: 12vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        align-content: center;
+
+    }
+
+    #li {
+        display: none;
+        margin-right: 0vw;
+        margin-left: 0vw;
+        padding: 7px;
+        background-color: black;
+        border-radius: 3px;
+        color: white;
+    }
+
+    #li:hover {
+        background: white;
+        padding: 12px;
+        color: black;
+        transition: 0.4s;
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+
+    #logo {
+        height: 90px;
+        width: auto;
+
+    }
+
+    #lii {
+        display: none;
+        color: black;
+
+    }
+
+    #imagenPessoal {
+        display: none;
+    }
+
+    #containerName {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 90vw;
+
+    }
+
+    #aboutMe {
+        
+        height: 100vh;
+        width: 90vw;
+        border-bottom: 1px solid white;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: auto;
+        color: rgb(194, 185, 185);
+    }
+
+    #sectionName {
+        height: 88vh;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        border-bottom: 2px solid white;
+    }
+
+    #nomeSectionName {
+        text-align: start;
+    }
+
+    #name {
+        display: grid;
+        justify-content: start;
+        font-size: 1em;
+        color: rgb(87, 198, 241);
+    }
+
+    #gridEducation {
+        margin-left: 0vw;
+        height: 65vh;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 33.3% 32.3% 33.4%;
+    }
+
+    .gridParagrafo {
+        font-size: 1em;
+        overflow: hidden;
+    }
+
+    #personagenFoto {
+        width: 37vw;
+        height: auto;
+    }
+
+    #bordaImg {
+        height: 29vh;
+    }
+
+    #name {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .skills {
+        border-bottom: 0px solid white;
+        height: 100vh;
+        width: 90vw;
+        color: white;
+    }
+
+    .gridColuns {
+        border: none;
+    }
+
+    .colunasskils {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        border: 1px solid black;
+        height: 95vh;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        overflow: hidden;
+
+    }
+    #ul{
+        display: none;
+    }
+    #bordaImg {
+        display: none;
+    }
+    #buttonMenuHeader{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        background-color: white;
+        width: 90vw;
+        height: 5vh;
+    }
+    a{
+        
+        text-decoration: none;
+        color: white;
+    }
+    a:hover{
+        color: black;
+    }
+    #conteinenButton{
+        display: none;
+        background-color: rgb(194, 185, 185);
+        width: 89vw;
+        position: grid;
+        justify-content: center;
+        align-items: center;
+        height: 32vh;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+    }
+    #conteinenButton a {
+        color: black;
+        font-size:  0.5em;
+    }
+    #conteinenButton a:hover{
+        color: aqua;
+    }
+    .skills{
+        display: block;
+        height: 100%;
+    }
+    #conteinerConhecimento{
+
+        display: grid;
+
+        justify-content: start;
+    }
+    #conhecimentoQuadrados{
+        display: grid;
+        justify-content: center;
+
+        
+        width: 25vw;
+
+    }
+    #texto{
+        width: 90vw;
+    }
+}
