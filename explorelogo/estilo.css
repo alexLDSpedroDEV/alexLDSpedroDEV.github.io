@@ -1,0 +1,79 @@
+.linkes{
+    border-radius: 100%;
+}
+body{
+    background-image: url(img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.img{
+    background-image: url(img/personagen-surf-sem-fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.fundoEscalada{
+    background-image: url(img/fundoEscalada.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.fundoPraia{
+    background-image: url(img/fundo-praia.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.fundobaseJump{
+    background-image: url(img/fundo-baseJump.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fundoParaquedismo{
+    background-image: url(img/fundo-paraquedismo1.jpg);
+    background-position: end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fundoOndasGrandes{
+    background-image: url(img/fundo-ondasGrandes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fundoRapel{
+    background-image: url(img/fundo-rapel.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fundoCaveJump{
+    background-image: url(img/fundo-caveJump.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.fundoRafting{
+    background-image: url(img/fundo-rafting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+@media (max-width: 600px){
+    .remover{
+        display: none;
+    }
+    .textCor{
+        color: white;
+    }    
+}
