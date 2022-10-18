@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+            background-image: linear-gradient(45deg, rgb(30, 218, 46), rgb(27, 219, 193));
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        div{
+            
+            margin: auto;
+            width: 90vw;
+            height: 100%;
+            text-align: center;
+        }
+        div div{
+            height: 10vh;
+        }
+        div form h1{
+            color: white;
+            font-size: 2.1em;
+            padding: 20px;
+        }
+        form{
+            padding: 50px;
+        }
+        div form input{
+            position: relative;
+            display: inline;
+            
+            width: 230px;
+            margin-left: 20px;
+            margin-top: 15px;
+            
+            padding: 20px;
+        }
+        
+        .entrar{
+            background-color: red;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button{
+            background-color: rgba(192, 176, 176, 0);
+            border-radius: 10px;
+            padding: 2px;
+            margin-top: 10px;
+            margin-left: 17px;
+            cursor: pointer;
+            color: white;
+        }
+        #btn2{
+            display: none;
+        }
+        @media only screen and (max-width: 900px) {
+            body{
+                width: 100vw;
+                min-height: 100vh;
+                height: 100%;
+                overflow-x: hidden;
+                background-image: linear-gradient(45deg, rgb(218, 130, 30), rgb(58, 38, 172));
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            form{
+                margin: auto;
+                width: 70vw;
+                
+            }
+            div form input{
+                display: inline;
+                
+                width: 41vw;
+                margin-left: 20px;
+                margin-top: 15px;
+                
+                padding: 20px;
+            }
+            
+            .entrar{
+                background-color: red;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            
+          }
+          @media only screen and (max-width: 500px) {
+            body{
+                width: 100vw;
+                height: 100%;
+                min-height: 100vh;
+                overflow-x: hidden;
+                background-image: linear-gradient(45deg, rgb(30, 212, 218), rgb(58, 38, 172));
+            }
+            form{
+                margin: auto;
+                width: 65vw;
+                
+            }
+            div form input{
+                display: inline;
+                
+                width: 40vw;
+                margin-left: 20px;
+                margin-top: 15px;
+                
+                padding: 20px;
+            }
+            
+            .entrar{
+                background-color: rgb(0, 38, 255);
+                border-radius: 10px;
+                cursor: pointer;
+                color: white;
+                font-size: 25px;
+            }
+            
+            
+        
+        }
+    </style>
+    <script>       
+    </script>
+</head>
+<body id="tela">
+    <div>
+        <form accept="" id="registrar" style="display: none;">
+            <h1>Completo o formulario pra registrar</h1>
+
+            <input type="text" id="fname"  name="fname" placeholder="Nome completo">
+            <input type="text" id="lname" name="lname" placeholder="userName"><br>
+            <input type="e-mail" id="email"  name="fname" placeholder="E-mail">
+            <input type="password" id="senha" name="lname" placeholder="Senha"><br><br>
+            <input name="text" id="text" style="width: 41vw;" placeholder="Proque voce quer entrar no nosso site"><br>
+            <input class="entrar" type="submit"  value="enviar" style="width: 44vw;" onclick="gravar()">
+        </form>
+        <form accept="" id="login" style="display: block;">
+            <h1>Completo o formulario pra logar</h1>
+
+            <input type="text" id="user"  name="fname" placeholder="userName" style="width: 41vw;"><br>
+            <input type="password" id="senha" name="lname" placeholder="Senha" style="width: 41vw;"><br><br>
+            <input class="entrar" type="submit"  value="enviar" style="width: 44vw;" onclick="entrar()"><br>
+
+        </form>
+        <button id="btn1" onclick="login()">Registrar-se</button>
+        <button id="btn2"  onclick="registrar()">Entrar</button>
+
+    </div>
+    
+    <script>
+        function login(){
+            document.getElementById('login').style.display= 'none';
+            document.getElementById('registrar').style.display= 'block';
+            document.getElementById('btn1').style.display= 'none';
+            document.getElementById('btn2').style.display= 'inline-block';
+        }
+        function registrar(){
+            document.getElementById('login').style.display= 'block';
+            document.getElementById('registrar').style.display= 'none';
+            document.getElementById('btn1').style.display= 'inline-block';
+            document.getElementById('btn2').style.display= 'none';
+        }
+
+        //registrar
+        function gravar(){
+            var nome = document.getElementById('fname').value;
+            var user = document.getElementById('lname').value;
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            
+            //armasenar na memoria
+            localStorage.setItem(nome,senha);  
+        }
+        function trocar(){
+            
+            window.location.href = 'entrada.html';
+            alert("bem vindo");
+        }
+        function entrar(){
+            var user = document.getElementById('user').value;
+            var senha = document.getElementById('senha').value;
+
+            
+            
+            for(i = 0; i <= localStorage.length; i++){
+                if(user == localStorage.key(i)){
+                    trocar();
+                    break;
+
+                }
+                else{
+                    alert("user errado");
+                }
+            }     
+        }
+    </script>
+</body>
+</html>
