@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        section .banner{
+            width: 80vw;
+            height: 55vh;
+            margin-top: 16vh;
+            margin-bottom: 10vh;
+            
+            background-image: url(img/abnner.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        a:hover{
+            color: white;
+        }
+        section .banner img{
+            border-radius: 5px;
+            width: 80vw;
+            height: auto;
+            
+        }
+        section .fl1{
+            margin-top: 4vh;
+            width: 80vw;
+            height: 45vh;
+            display: grid;
+            grid-row: auto ;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-between;
+        }
+        .pd-4{
+            margin-top: 20px;
+        }
+        section div .container{
+            overflow: hidden;
+            width: 17vw;
+            height: 44vh;
+            border-radius: 5px;
+            color: rgba(0, 255, 255, 0);
+        }
+        section div .container:hover{
+            color: rgb(2, 2, 2);
+        }
+        section div .img{
+            background-image: url("img/homen.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img1{
+            background-image: url("img/mulher.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img2{
+            background-image: url("img/homen.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img3{
+            background-image: url("img/homen3.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img4{
+            background-image: url("img/mulher2.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img5{
+            background-image: url("img/homen2.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img6{
+            background-image: url("img/womanFrente.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img7{
+            background-image: url("img/garota1.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div .img8{
+            background-image: url("img/top.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        section div div{
+            display: none;
+            padding: 10px;
+            width: 14vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        section div div:hover{
+            background-color: rgb(107, 101, 101);
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .maisVendidas{
+            display: none;
+            justify-content: center;
+            align-items: end;
+            width: 80vw;
+            height: 14vh;
+            color: rgb(124, 112, 112);
+            font-size: 1.3em;
+        }
+        
+       
+        .valores{
+            width: 80vw;
+            height: 20vh;
+
+        }
+        .valores p{
+            display: inline;
+        }
+        .preço{
+            position: relative;
+            left: 2vw;
+            top: 6vh;
+            font-size: 20px;
+        }
+        .preço1{
+            position: relative;
+            left: 17vw;
+            top: 6vh;
+            font-size: 20px;
+        }
+        .preço2{
+            position: relative;
+            left: 33vw;
+            top: 6vh;
+            font-size: 20px;
+        }
+        .preço3{
+            position: relative;
+            left: 48vw;
+            top: 6vh;
+            font-size: 20px;
+        }
+
+        @media only screen and (max-width: 740px) {
+            
+            section .banner{
+                width: 80vw;
+                height: 40vh;
+                margin-top: 17vh;
+                padding-top: 10vh;
+                background-image: url(img/abnner.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            section .fl1{
+                margin-top: 4vh;
+                width: 80vw;
+                height: 35vh;
+                display: grid;
+                grid-row: auto ;
+                grid-template-columns: auto auto auto auto;
+                justify-content: space-between;
+            }
+            .pd-4{
+                margin-top: 20px;
+            }
+            section div .container{
+                overflow: hidden;
+                width: 17vw;
+                height: 35vh;
+                border-radius: 5px;
+                color: rgba(0, 255, 255, 0);
+            }
+            section div .container:hover{
+                color: rgb(2, 2, 2);
+            }
+            section div .img{
+                background-image: url("img/homen.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img1{
+                background-image: url("img/mulher.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img2{
+                background-image: url("img/homen.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img3{
+                background-image: url("img/homen3.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img4{
+                background-image: url("img/mulher2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img5{
+                background-image: url("img/homen2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img6{
+                background-image: url("img/womanFrente.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img7{
+                background-image: url("img/garota1.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img8{
+                background-image: url("img/top.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div div{
+                display: none;
+                padding: 10px;
+                width: 20vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+                
+            }
+            section div div:hover{
+                background-color: black;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            
+            
+           
+            .valores{
+                width: 80vw;
+                height: 20vh;
+    
+            }
+            .valores p{
+                display: inline;
+            }
+            .preço{
+                position: relative;
+                left: 0vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço1{
+                position: relative;
+                left: 13vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço2{
+                position: relative;
+                left: 25vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço3{
+                position: relative;
+                left: 37vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+        }
+        @media only screen and (max-width: 640px) {
+            body{
+                width: 100vw;
+            }
+            section .banner{
+                width: 80vw;
+                height: 25vh;
+                margin-top: 5vh;
+                overflow: hidden;
+                border-radius: 5px;
+                background-image: url(img/abnner.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            
+            section .fl1{
+                margin-top: 10vh;
+                width: 80vw;
+                height: auto;
+                display: grid;
+                grid-row: auto auto auto auto;
+                grid-template-columns: auto auto;
+                justify-content: space-around;
+            }
+            .pd-4{
+                margin-top: 20px;
+            }
+            section div .container{
+                overflow: hidden;
+                margin-top: 10px;
+                width: 33vw;
+                height: 35vh;
+                border-radius: 5px;
+                color: rgba(0, 255, 255, 0);
+            }
+            section div .container:hover{
+                color: rgb(2, 2, 2);
+            }
+            section div .img{
+                background-image: url("img/homen.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+            section div .img1{
+                background-image: url("img/mulher.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+            section div .img2{
+                background-image: url("img/homen.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img3{
+                background-image: url("img/homen3.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+            section div .img4{
+                background-image: url("img/mulher2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div .img5{
+                background-image: url("img/homen2.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            section div .img6{
+                background-image: url("img/womanFrente.webp");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            section div .img7{
+                background-image: url("img/garota1.webp");
+                background-size: cover;
+                background-position: start;
+                background-repeat: no-repeat;
+            }
+            section div .img8{
+                background-image: url("img/top.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            section div div{
+                display: none;
+                padding: 10px;
+                width: 24vw;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1em;
+                
+            }
+            section div div:hover{
+                background-color: rgb(112, 106, 106);
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            
+            .maisVendidas{
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                width: 80vw;
+                height: 14vh;
+                color: rgb(124, 112, 112);
+                font-size: 1.3em;
+            }
+           
+            .valores{
+                display: none;
+
+                width: 80vw;
+                height: 15vh;
+    
+            }
+            .valores p{
+                display: none;
+            }
+            .preço{
+                position: relative;
+                left: 0vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço1{
+                position: relative;
+                left: 13vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço2{
+                position: relative;
+                left: 25vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+            .preço3{
+                position: relative;
+                left: 37vw;
+                top: 6vh;
+                font-size: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <b>Nutral</b>
+        </div>
+        <div class="nav" id="nav">
+            <nav id="">
+                <a href="index.html" id="new">Novas coleção</a>
+                <a href="shop.html">Shop</a>
+                <a href="mans.html">Mans</a>
+                <a href="womans.html">Womens</a>
+            
+            </nav>
+        </div>
+       
+        
+        <div class="shop" id="shop">
+            <button id="menu" onclick="menu()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="text" placeholder="search">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+        <div class="menuBaixo" id="menuBaixo">
+            <button id="menu" onclick="menufechar()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <a href="index.html" id="new">Novas coleção</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">Mans</a>
+            <a href="#">Womens</a>
+        </div>
+    </header>
+    <section>
+        <div class="banner">
+            
+        </div>
+        <div class="fl1">
+            <div class="container img"><div class="teste" onmouseover="up()"><a href="html/camisaListrada.html">mais detalhes</a> </div></div>
+            <div class="container img1"><div onclick="up()"><a href="html/calsa.html">mais detalhes</a> </div></div>
+            <div class="container img3"><div onclick="up()"><a href="html/camisaDou.html">mais detalhes</a> </div></div>
+            <div class="container img4"><div onclick="up()"><a href="html/conjunto.html">mais detalhes</a> </div></div>
+        </div>
+        <div class="maisVendidas">
+            <h1> As mais vendidas</h1>
+        </div>
+        <div class="valores">
+            <p class="preço">17,00€</p>
+            <p class="preço1">10,00€</p>
+            <p class="preço2">17,00€</p>
+            <p class="preço3">33,00€</p>
+        </div>
+        <div class="fl1 pd-4">
+            <div class="container img5"><div  onmouseover="up()"> <a href="html/camisabrilando.html">mais detalhes</a> </div></div>
+            <div class="container img6"><div  onclick="up()"><a href="html/sueter.html">mais detalhes</a> </div></div>
+            <div class="container img7"><div  onclick="up()"><a href="html/conjunto2.html">mais detalhes</a> </div></div>
+            <div class="container img8"><div  onclick="up()"><a href="html/toper.html">mais detalhes</a> </div></div>
+        </div>
+        <div class="valores">
+            <p class="preço">27,00€</p>
+            <p class="preço1">50,00€</p>
+            <p class="preço2">17,00€</p>
+            <p class="preço3">37,00€</p>
+        </div>
+        
+    </section>
+    
+    <footer>
+        
+    </footer>
+
+
+    <script>
+        function menu(){
+           
+            
+            document.getElementById("shop").style.display= "none"
+            document.getElementById("logo").style.display= "none"
+
+            document.getElementById("menuBaixo").style.display= "inline"
+            document.getElementById("menuBaixo").style.position= "relative"
+            document.getElementById("menuBaixo").style.top= "15vh"
+            document.getElementById("menuBaixo").style.backgroundColor= "rgb(248, 233, 215)"
+            document.getElementById("menuBaixo").style.height= "30vh"
+
+
+
+        }
+        function menufechar(){
+           
+            document.getElementById("shop").style.display= "inline"
+            document.getElementById("logo").style.display= "inline"
+
+            document.getElementById("menuBaixo").style.display= "none"
+            document.getElementById("menuBaixo").style.position= "static"
+            document.getElementById("menuBaixo").style.top= "0vh"
+
+        }
+        function up(){
+            document.getElementsByTagName("teste").style.display= "flex";
+            document.getElementById("teste").style.color= "white";
+            document.getElementById("teste").style.backgroundColor= "white";
+            
+
+        }
+    </script>
+</body>
+</html>
