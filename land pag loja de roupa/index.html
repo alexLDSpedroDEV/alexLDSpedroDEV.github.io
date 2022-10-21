@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>land pag</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <b>Nutral</b>
+        </div>
+        <div class="nav" id="nav">
+            <nav id="">
+                <a href="index.html" id="new">Novas coleção</a>
+                <a href="shop.html">Shop</a>
+                <a href="#">Mans</a>
+                <a href="#">Womens</a>
+                
+            
+            </nav>
+        </div>
+       
+        
+        <div class="shop" id="shop">
+            <button id="menu" onclick="menu()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="text" placeholder="search">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span><b>(<output>0</output>)</b>
+        </div>
+        <div class="menuBaixo" id="menuBaixo">
+            <button id="menu" onclick="menufechar()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <a href="#" id="new">Novas coleção</a>
+            <a href="#">Shop</a>
+            <a href="#">Mans</a>
+            <a href="#">Womens</a>
+        </div>
+    </header>
+    <section>
+        <div class="title">
+            <h1>Roupas Que Te<br> Fazem Diferente.</h1>
+
+        </div>
+        <div class="subtitle">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Fusce odio ligula, dignissim ac pellentesque sed</p>
+        </div>
+        <div class="comprar">
+            <p id="shop"><a href="shop.html">Compre Agora</a> </p>
+            <p id="rat"><span class="material-symbols-outlined">
+                    star
+                </span>4.1 Rating
+            </p>
+        </div>
+        <div class="brusa">
+            <p id="money">$435</p>
+            <div class="rosa">
+                <img src="img/camiseta.webp" alt="" width="200px">
+            </div>
+            <P id="title">Nike los Angeles </P>
+            <a href="#">
+                Adicionar ao carrinho <b>+</b>
+            </a>
+        </div>
+        <div class="jaqueta">
+            <div>
+                <img src="img/personarFrente.webp" alt="" width="280px">
+            </div>
+            <p id="text">
+                Lorem ipsum dolor sit amet, consectetur<br> adipiscing
+            elit. Fusce odio ligula, dign<br> issim ac pellentesque sed
+            </p>
+            <div id="personagen">
+                <img src="img/womanFrente.webp" alt="" width="282px">
+            </div>
+            <article>
+                <p id="title">Double Button Lapel Collar Blazer</p>
+                <br><hr>
+                <b>28,00€</b>
+                <br>
+                <p id="shop"><a href="shop.html">Compre Agora</a> </p>
+            </article>
+            
+        </div>
+    
+        
+    </section>
+
+
+    <script>
+        function menu(){
+           
+            
+            document.getElementById("shop").style.display= "none"
+            document.getElementById("logo").style.display= "none"
+
+            document.getElementById("menuBaixo").style.display= "inline"
+            document.getElementById("menuBaixo").style.position= "relative"
+            document.getElementById("menuBaixo").style.top= "6vh"
+
+
+        }
+        function menufechar(){
+           
+            document.getElementById("shop").style.display= "inline"
+            document.getElementById("logo").style.display= "inline"
+
+            document.getElementById("menuBaixo").style.display= "none"
+            document.getElementById("menuBaixo").style.position= "static"
+            document.getElementById("menuBaixo").style.top= "0vh"
+
+        }
+    </script>
+</body>
+</html>

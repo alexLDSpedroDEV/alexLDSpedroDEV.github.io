@@ -1,0 +1,762 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(248, 233, 215);
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+/* header */
+header{
+    width: 85vw;
+    height: 20vh;
+    margin: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-content: center;
+   
+}
+.menuBaixo{
+    display: none;
+}
+header div{ 
+    padding: 10px;
+}
+header .logo b{
+    font-size: 2rem;
+    font-weight: 800;
+}
+header  .nav a{
+    position: relative;
+    top: 10px;
+    padding: 20px;
+    text-align: end;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(116, 112, 107);
+    
+}
+header  .nav a:hover{
+    color: rgb(44, 42, 42);
+}
+header .shop{
+    position: relative;
+    top: 2vh;
+}
+header .shop input{
+    position: relative;
+    top: -1vh;
+    padding: 5px;
+    width: 10vw;
+    font-size: 18px;
+    background-color:  rgb(248, 233, 215);
+}
+header .shop b{
+    position: relative;
+    top: -1vh;
+    padding: 5px;
+    width: 10vw;
+    font-size: 18px;
+    color: rgb(116, 112, 107);
+}
+header .shop button{
+    display: none;
+    padding-right: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+/* section */
+section{
+    width: 85vw;
+    height: 100vh;
+    margin: auto;
+    
+}
+section .title{
+
+    width: 48vw;
+    height: 30vh;
+    padding-top: 10vh;
+    font-size: 2.7em;
+    
+}
+section .title h1{
+    font-weight: 500;
+}
+section .subtitle{
+    
+    width: 30vw;
+    height: 10vh;
+    padding-top: 4vh;
+    
+}
+section .subtitle p{
+    
+    color: rgb(82, 80, 79);
+    font-size: 1.1rem;
+    
+}
+section .comprar{
+    margin-top: 8vh;
+    height: 8vh;
+}
+section .comprar  p{
+    display: inline;
+    padding: 18px;
+
+}
+section .comprar #shop{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    
+}
+section .comprar #shop a{
+    text-decoration: none;
+    color: white;
+}
+section .comprar #shop:hover{
+    background-color: rgb(51, 47, 47);
+    cursor: pointer;
+
+}
+section .brusa{
+    height: 60vh;
+    width: 15vw;
+    position: relative;
+    left: 34vw;
+    top: -22vh;
+}
+section .brusa .rosa{   
+    width: 18vw;
+    height: 41vh;
+}
+div #money{
+    position: relative;
+    left: 12vw;
+    top: 5vh;
+}
+div #title{
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+section .brusa a{
+    padding-top: 15px;
+    text-decoration: none;
+    color: rgb(231, 142, 9);
+}
+.brusa a b{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-size: 25px;
+}
+section .jaqueta{
+    width: 25vw;
+    max-width: 25vw;
+    height: 76vh;
+    position: relative;
+    left: 60vw;
+    top:-120vh;
+}
+section .jaqueta div{
+
+    border-radius: 5px;
+    height: 60vh;
+    width: 22vw;
+    min-width: 22vw;
+    box-shadow: 5px 7px 5px 5px #b9b1b1;
+}
+section .jaqueta #text{
+    width: 23vw;
+    color: rgb(116, 112, 107);
+    padding-top: 20px;
+    font-size: 18px;
+}
+section .jaqueta #personagen{
+    position: relative;
+    right: 60vw;
+    top: 25px;
+}
+section .jaqueta article{
+    position: relative;
+    right: 29vw;
+    top: -30vh;
+}
+section .jaqueta article b{
+    
+    text-decoration: none;
+    color: rgb(231, 142, 9);
+}
+section article #title{
+    font-size: 25px;
+}
+section article p a{
+    position: relative;
+    top: 40px;
+    background-color: black;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query de 950px */
+@media only screen and (max-width: 950px) {
+    body{
+        background-color: rgb(248, 233, 215);
+    }
+    header{
+        width: 85vw;
+        height: 20vh;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto  auto;
+        justify-content: space-between;
+        align-content: center;
+       
+    }
+    
+    header .menuBaixo{
+        display: none;
+        height: 20vh;
+        width: 80vw;
+        text-align: end;
+        
+
+    }
+    header .menuBaixo a{
+        text-align: end;
+        display: block;
+        text-decoration: none;
+        color: rgb(116, 112, 107);
+        font-size: 18px;
+    }
+    header .menuBaixo a:hover{
+        color: rgb(34, 33, 32);
+        
+
+    }
+
+    header .menuBaixo button{
+        text-align: center;
+        display: block;
+        background-color: rgb(248, 233, 215);
+
+    }
+    header .shop button{
+        display: inline;
+        padding-right: 5vw;
+        background-color: rgb(248, 233, 215);
+        cursor: pointer;
+    }
+    header div{ 
+        padding: 10px;
+    }
+    header .logo b{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    header  .nav{
+        display: none;
+        position: relative;
+        top: 10px;
+        padding: 20px;
+        text-align: end;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(116, 112, 107);
+        
+    }
+    header  .nav a:hover{
+        color: rgb(44, 42, 42);
+    }
+    header .shop{
+        position: relative;
+        top: 2vh;
+    }
+    header .shop input{
+        position: relative;
+        top: -1vh;
+        padding: 5px;
+        width: 10vw;
+        font-size: 18px;
+        background-color:  rgb(248, 233, 215);
+    }
+    header .shop b{
+        position: relative;
+        top: -1vh;
+        padding: 5px;
+        width: 10vw;
+        font-size: 18px;
+        color: rgb(116, 112, 107);
+    }
+    /* section */
+    section{
+        width: 85vw;
+        height: 100vh;
+        margin: auto;
+        
+    }
+    section .title{
+
+        width: 85vw;
+        height: 21vh;
+        padding-top: 5vh;
+        font-size: 2.0em;
+        
+    }
+    section .title h1{
+        font-weight: 500;
+    }
+    section .subtitle{
+        
+        width: 50vw;
+        height: 14vh;
+        padding-top: 0vh;
+        
+    }
+    section .subtitle p{
+        
+        color: rgb(82, 80, 79);
+        font-size: 1.1rem;
+        
+    }
+    section .comprar{
+        margin-top: 6vh;
+        height: 8vh;
+    }
+    section .comprar  p{
+        display: inline;
+        padding: 18px;
+
+    }
+    section .comprar #shop{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        
+    }
+    section .comprar #rat{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-left: 10px;
+
+    }
+    section .comprar #rat:hover{
+        color: rgb(44, 40, 48);
+        cursor: pointer;
+    }
+    section .comprar #shop a{
+        text-decoration: none;
+        color: white;
+    }
+    section .comprar #shop:hover{
+        background-color: rgb(51, 47, 47);
+        cursor: pointer;
+
+    }
+    section .brusa{
+        margin-top: 7vh;
+        height: 65vh;
+        width: 80vw;
+        position: static;
+       
+    }
+    section .brusa .rosa{ 
+        margin: auto;  
+        width: 48vw;
+        height: 41vh;
+    }
+    div #money{
+        display: none;
+    }
+    div #title{
+        padding-top: 8vh;
+        font-weight: bolder;
+        font-size: 20px;
+        padding-left: 20vw;
+    }
+    section .brusa a{
+        padding-top: 15px;
+        padding-left: 20vw;
+        text-decoration: none;
+        color: rgb(231, 142, 9);
+        margin: auto;
+        text-align: center;
+
+        
+    }
+    .brusa a b{
+        text-align: center;
+        font-size: 25px;
+    }
+    section .jaqueta{
+        height: 85vh;
+        width: 80vw;
+        position: static;
+    
+    }
+    section .jaqueta div{
+        justify-content: end;
+        margin: auto;
+        border-radius: 5px;
+        height: 60vh;
+        width: 22vw;
+        box-shadow: 5px 7px 5px 5px #b9b1b1;
+    }
+    section .jaqueta #text{
+        display: flex;
+        
+        justify-content: start;
+
+        width: 80vw;
+        color: rgb(116, 112, 107);
+        padding-top: 35px;
+        font-size: 18px;
+    }
+    section .jaqueta #personagen{
+        margin-top: 8vh;
+        position: static;
+        width: 281px;
+        height: 61vh;
+        padding-top: 20px;
+        box-shadow: none;
+
+        
+    }
+    section .jaqueta article{
+        position: static;
+        display: block;
+        justify-content: start;
+        width: 80vw;
+        height: 40vh;
+        
+    }
+    section .jaqueta article b{
+        position: static;
+        text-decoration: none;
+        color: rgb(231, 142, 9);
+    }
+    section article #title{
+        
+        position: relative;
+        left: -20vw;
+        top: -3vh;
+    }
+    section article p a{
+        position: relative;
+        left: 0;
+        background-color: black;
+        
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+    }
+    section .jaqueta p{
+        text-align: start;
+        font-size: 15px;
+        width: 80vw;
+        height: 2vh;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media only screen and (max-width: 450px) {
+    body{
+        background-color:  rgb(248, 233, 215);
+    }
+    header{
+        width: 85vw;
+        height: 20vh;
+        margin: auto;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto  auto;
+        justify-content: space-between;
+        align-content: center;
+       
+    }
+    
+    header .menuBaixo{
+        display: none;
+        height: 20vh;
+        width: 80vw;
+        text-align: end;
+        
+
+    }
+    header .menuBaixo a{
+        text-align: end;
+        display: block;
+        text-decoration: none;
+        color: rgb(116, 112, 107);
+        font-size: 18px;
+    }
+    header .menuBaixo a:hover{
+        color: rgb(34, 33, 32);
+        
+
+    }
+
+    header .menuBaixo button{
+        text-align: center;
+        display: block;
+        background-color: rgb(248, 233, 215);
+
+    }
+    header .shop button{
+        display: inline;
+        padding-right: 5vw;
+        background-color: rgb(248, 233, 215);
+        cursor: pointer;
+    }
+    header div{ 
+        padding: 10px;
+    }
+    header .logo b{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    header  .nav{
+        display: none;
+        position: relative;
+        top: 10px;
+        padding: 20px;
+        text-align: end;
+        font-size: 20px;
+        text-decoration: none;
+        color: rgb(116, 112, 107);
+        
+    }
+    header  .nav a:hover{
+        color: rgb(44, 42, 42);
+    }
+    header .shop{
+        position: relative;
+        top: 2vh;
+    }
+    header .shop input{
+        position: relative;
+        top: -1vh;
+        padding: 5px;
+        width: 10vw;
+        font-size: 18px;
+        background-color:  rgb(248, 233, 215);
+    }
+    header .shop b{
+        position: relative;
+        top: -1vh;
+        padding: 5px;
+        width: 10vw;
+        font-size: 18px;
+        color: rgb(116, 112, 107);
+    }
+    /* section */
+    section{
+        width: 85vw;
+        height: 100vh;
+        margin: auto;
+        
+    }
+    section .title{
+
+        width: 85vw;
+        height: 21vh;
+        padding-top: 1vh;
+        font-size: 2.0em;
+        
+    }
+    section .title h1{
+        font-weight: 500;
+    }
+    section .subtitle{
+        
+        width: 50vw;
+        height: 14vh;
+        padding-top: 0vh;
+        
+    }
+    section .subtitle p{
+        
+        color: rgb(82, 80, 79);
+        font-size: 1.1rem;
+        
+    }
+    section .comprar{
+        margin-top: 2vh;
+        height: 8vh;
+    }
+    section .comprar  p{
+        display: inline;
+        padding: 18px;
+
+    }
+    section .comprar #shop{
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        
+    }
+    section .comprar #rat{
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-left: 10px;
+
+    }
+    section .comprar #rat:hover{
+        color: rgb(44, 40, 48);
+        cursor: pointer;
+    }
+    section .comprar #shop a{
+        text-decoration: none;
+        color: white;
+    }
+    section .comprar #shop:hover{
+        background-color: rgb(51, 47, 47);
+        cursor: pointer;
+
+    }
+    section .brusa{
+        margin-top: 7vh;
+        height: 50vh;
+        width: 80vw;
+        position: static;
+       
+    }
+    section .brusa .rosa{ 
+        margin: auto;  
+        width: 48vw;
+        height: 28vh;
+    }
+    div #money{
+        display: none;
+    }
+    div #title{
+        padding-top: 8vh;
+        font-weight: bolder;
+        font-size: 20px;
+        padding-left: 20vw;
+    }
+    section .brusa a{
+        padding-top: 15px;
+        padding-left: 20vw;
+        text-decoration: none;
+        color: rgb(231, 142, 9);
+        margin: auto;
+        text-align: center;
+
+        
+    }
+    .brusa a b{
+        text-align: center;
+        font-size: 25px;
+    }
+    section .jaqueta{
+        height: 85vh;
+        width: 80vw;
+        position: static;
+    
+    }
+    section .jaqueta div{
+        justify-content: end;
+        margin: auto;
+        border-radius: 5px;
+        height: 44vh;
+        width: 71vw;
+        box-shadow: 5px 7px 5px 5px #b9b1b1;
+    }
+    section .jaqueta #text{
+        display: flex;
+        
+        justify-content: start;
+
+        width: 80vw;
+        color: rgb(116, 112, 107);
+        padding-top: 35px;
+        font-size: 18px;
+    }
+    section .jaqueta #personagen{
+        margin-top: 8vh;
+        position: static;
+        width: 281px;
+        height: 43vh;
+        padding-top: 20px;
+        box-shadow: none;
+
+        
+    }
+    section .jaqueta article{
+        position: static;
+        display: block;
+        justify-content: start;
+        width: 80vw;
+        height: 28vh;
+        
+    }
+    section .jaqueta article b{
+        position: static;
+        text-decoration: none;
+        color: rgb(231, 142, 9);
+    }
+    section article #title{
+        
+        position: relative;
+        left: -20vw;
+        top: -3vh;
+    }
+    section article p a{
+        position: relative;
+        left: 0;
+        background-color: black;
+        
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+    }
+    section .jaqueta p{
+        text-align: start;
+        font-size: 15px;
+        width: 80vw;
+        height: 2vh;
+    }
+
+  }
