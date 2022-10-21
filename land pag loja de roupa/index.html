@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        section{
+            width: 80vw;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto auto auto;
+            justify-content: center;
+        }
+        .container{
+            margin: 20px;
+            height: auto;
+        }
+        .title{
+            width: 80vw;
+            height: auto;
+            font-size: 1.9rem;
+            
+        }
+        .title h1{
+            font-weight: 500;
+            color: black;
+        }
+        .title p{
+            padding-top: 4vh;
+            font-weight: 500;
+            color: rgb(116, 112, 107);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        .container div{
+            height: auto;
+            width: 80vw;
+            display: flex;
+            justify-content: start;
+
+        }
+        .btn{
+            display: inline;
+            margin: 4px;
+            padding: 15px;
+            width: 30vw;
+            border-radius: 5px;
+        }
+        .btn1{
+            background-color: black;
+            color: white;
+            font-weight: 400;  
+        }
+        .btn1 a{
+            font-size: 20px;
+            color: white;
+        }
+        .btn1:hover{
+            color: bisque;
+            background-color: rgb(31, 28, 28);
+            border: none;
+        }
+        .btn2 a{
+            color: black;
+            
+        }
+        .btn2 a:hover{
+            color: bisque;
+            background-color: rgb(61, 57, 57);
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        .roupas{
+            display: grid;
+            width: 80vw;
+            justify-items: center;
+            align-items: center;
+        }
+        .roupas img{
+            border-radius: 5px;
+            width: 50vw;
+        }
+        .title2{
+            padding: 10px;
+            font-size: 2em;
+        }
+        .carrinho{
+            color: rgb(255, 166, 0);
+        }
+        .text{
+            color: rgb(75, 71, 71);
+            font-size: 1.1em;
+            padding-top: 3vh;
+            width: 60vw;
+        }
+
+
+        
+        @media only screen and (min-width: 850px) {
+            
+            section{
+                height: 128vh;
+                width: 80vw;
+                display: grid;
+                grid-template-columns: auto ;
+                grid-template-rows: auto auto auto auto;
+                justify-content: center;
+            }
+            .container{
+                margin: 20px;
+                height: auto;
+            }
+            .title{
+                width: 40vw;
+                height: auto;
+                font-size: 1.9rem;
+                
+            }
+            .title h1{
+                font-weight: 500;
+                color: black;
+            }
+            .title p{
+                padding-top: 4vh;
+                font-weight: 500;
+                color: rgb(116, 112, 107);
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+            .container div{
+                height: auto;
+                width: 40vw;
+                display: flex;
+                justify-content: start;
+    
+            }
+            .btn{
+                display: inline;
+                margin: 4px;
+                padding: 15px;
+                width: 30vw;
+                border-radius: 5px;
+            }
+            .btn1{
+                background-color: black;
+                color: white;
+                font-weight: 400;  
+            }
+            .btn1 a{
+                font-size: 20px;
+                color: white;
+            }
+            .btn1:hover{
+                color: bisque;
+                background-color: rgb(31, 28, 28);
+                border: none;
+            }
+            .btn2 a{
+                color: black;
+                
+            }
+            .btn2 a:hover{
+                color: bisque;
+                background-color: rgb(61, 57, 57);
+            }
+            a{
+                text-decoration: none;
+                
+            }
+            .roupas{
+                position: relative;
+                display: grid;
+                width: 80vw;
+                left: 4vw;
+                top: 0vh;
+                justify-items: center;
+                align-items: center;
+            }
+            .roupas img{
+                border-radius: 5px;
+                width: 20vw;
+            }
+            .roupas1{
+                position: relative;
+                display: grid;
+                width: 80vw;
+                left: 30vw;
+                top: -121vh;
+                justify-items: center;
+                align-items: center;
+            }
+            .roupas1 img{
+                border-radius: 5px;
+                width: 24vw;
+            }
+            .roupas2{
+                position: relative;
+                display: grid;
+                width: 80vw;
+                left: -27vw;
+                top: -114vh;
+                justify-items: center;
+                align-items: center;
+            }
+            .roupas2 img{
+                border-radius: 5px;
+                width: 24vw;
+            }
+            .title2{
+                padding: 10px;
+                font-size: 2em;
+            }
+            .carrinho{
+                color: rgb(255, 166, 0);
+            }
+            .text{
+                color: rgb(75, 71, 71);
+                font-size: 1.1em;
+                padding-top: 3vh;
+                width: 27vw;
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" id="logo">
+            <b>Nutral</b>
+        </div>
+        <div class="nav" id="nav">
+            <nav id="">
+                <a href="index.html" id="new">Novas coleção</a>
+                <a href="shop.html">Shop</a>
+                <a href="mans.html">Mans</a>
+                <a href="womans.html">Womens</a>
+            
+            </nav>
+        </div>
+       
+        
+        <div class="shop" id="shop">
+            <button id="menu" onclick="menu()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <span class="material-symbols-outlined">
+                search
+            </span>
+            <input type="text" placeholder="search">
+            <span class="material-symbols-outlined">
+                shopping_cart
+            </span>
+        </div>
+        <div class="menuBaixo" id="menuBaixo">
+            <button id="menu" onclick="menufechar()"><span class="material-symbols-outlined">
+                menu
+            </span></button>
+            <a href="index.html" id="new">Novas coleção</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">Mans</a>
+            <a href="#">Womens</a>
+        </div>
+    </header>
+    <section>
+        <div class="container title">
+            <h1>Roupas Que Te<br> Fazem Diferente.</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Fusce odio ligula, dignissim ac pellentesque sed
+            </p>
+        </div>
+        <div class="container">
+            <div>
+                <p class="btn btn1"><a href="shop.html">Compre Aqui</a></p>
+                <p class="btn btn2">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <b> 4.1 Rating</b>
+                </p>
+            </div>
+        </div>     
+        <div class="container  roupas">
+           
+            <img src="img/camiseta.webp" alt="">
+            <h1 class="title2">Nike Los Angeles</h1>
+            <a class="carrinho" href="shop.html">Adicionar ao carrinho +</a>
+            
+        </div>        
+        <div class="container roupas roupas1">
+            <img src="img/personarFrente.webp" alt="">
+            <p class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Fusce odio ligula, dignissim ac pellentesque sed."
+            </p>
+        </div>  
+        <div class="container roupas roupas2">
+            <img src="img/womanFrente.webp" alt="">
+            <h1 class="title2">Lapel Collar Blazer</h1>
+            <p class="carrinho"></p>
+            <a class="carrinho" href="shop.html">Adicionar ao carrinho +</a>
+
+        </div>  
+        
+    </section>
+    <footer>
+        
+    </footer>
+
+
+    <script>
+        function menu(){
+           
+            
+            document.getElementById("shop").style.display= "none"
+            document.getElementById("logo").style.display= "none"
+
+            document.getElementById("menuBaixo").style.display= "inline"
+            document.getElementById("menuBaixo").style.position= "relative"
+            document.getElementById("menuBaixo").style.top= "15vh"
+            document.getElementById("menuBaixo").style.backgroundColor= "rgb(248, 233, 215)"
+            document.getElementById("menuBaixo").style.height= "30vh"
+
+
+
+        }
+        function menufechar(){
+           
+            document.getElementById("shop").style.display= "inline"
+            document.getElementById("logo").style.display= "inline"
+
+            document.getElementById("menuBaixo").style.display= "none"
+            document.getElementById("menuBaixo").style.position= "static"
+            document.getElementById("menuBaixo").style.top= "0vh"
+
+        }
+        function up(){
+            document.getElementsByTagName("teste").style.display= "flex";
+            document.getElementById("teste").style.color= "white";
+            document.getElementById("teste").style.backgroundColor= "white";
+            
+
+        }
+    </script>
+</body>
+</html>
