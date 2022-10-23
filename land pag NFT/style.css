@@ -399,7 +399,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts2.jpeg");
+    background-image: url("imgs/nfts2.jpeg");
 }
 .nftImg3{
     width: 90%;
@@ -410,7 +410,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts1.jpg");
+    background-image: url("imgs/nfts1.jpg");
 }
 .nftImg4{
     width: 90%;
@@ -421,7 +421,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts3.jpg");
+    background-image: url("imgs/nfts3.jpg");
 }
 .nftImg5{
     width: 90%;
@@ -432,7 +432,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts4.png");
+    background-image: url("imgs/nfts4.png");
 }
 .nftImg6{
     width: 90%;
@@ -443,7 +443,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts2.jpeg");
+    background-image: url("imgs/nfts2.jpeg");
 }
 .nftImg7{
     width: 90%;
@@ -454,7 +454,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts5.png");
+    background-image: url("imgs/nfts5.png");
 }
 .nftImg8{
     width: 90%;
@@ -465,7 +465,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts6.jpg");
+    background-image: url("imgs/nfts6.jpg");
 }
 .nftImg9{
     width: 90%;
@@ -476,7 +476,7 @@ header{
     background-size: contain;
     overflow: hidden;
     background-position: center;
-    background-image: url("/imgs/nfts7.webp");
+    background-image: url("imgs/nfts7.webp");
 }
 .btn-abrir{
     width: 80vw;
@@ -610,7 +610,7 @@ header{
     margin-bottom: 5px;
     width: 100%;
     height: 52%;
-    background-image: url("/imgs/nft3.jpg");
+    background-image: url("imgs/nft3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -620,7 +620,7 @@ header{
     margin-top: 5px;
     width: 100%;
     height: 53%;
-    background-image: url("/imgs/nft2.jpg");
+    background-image: url("imgs/nft2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -642,7 +642,7 @@ header{
     margin-bottom: 5px;
     width: 100%;
     height: 52%;
-    background-image: url("/imgs/nft7.jpg");
+    background-image: url("imgs/nft7.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -652,7 +652,7 @@ header{
     margin-top: 5px;
     width: 100%;
     height: 53%;
-    background-image: url("/imgs/nft8.jpg");
+    background-image: url("imgs/nft8.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -663,7 +663,7 @@ header{
     height: 100%;
     width: 90%;
     overflow: hidden;
-    background-image: url("/imgs/nft5.jpg");
+    background-image: url("imgs/nft5.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -674,7 +674,7 @@ header{
     margin-bottom: 5px;
     width: 100%;
     height: 52%;
-    background-image: url("/imgs/nfts4.png");
+    background-image: url("imgs/nfts4.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -684,7 +684,7 @@ header{
     margin-top: 5px;
     width: 100%;
     height: 53%;
-    background-image: url("/imgs/nfts1.jpg");
+    background-image: url("imgs/nfts1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
