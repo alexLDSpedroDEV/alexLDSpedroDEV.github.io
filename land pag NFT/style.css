@@ -595,7 +595,7 @@ header{
     height: 100%;
     width: 90%;
     overflow: hidden;
-    background-image: url("/imgs/nft4.jpg");
+    background-image: url("imgs/nft4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -631,7 +631,7 @@ header{
     height: 100%;
     width: 90%;
     overflow: hidden;
-    background-image: url("/imgs/nfts7.webp");
+    background-image: url("imgs/nfts7.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
