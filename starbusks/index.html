@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>starbucks</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img class="logo" src="/images/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Isso não é café,<br> isso é <span>Starbucks</span></h2>
+                <p>
+                    On the other hand, we denounce with righteous indignation and dis
+                    like men who are so beguiled and demoralized by the charms of ple
+                    asure of the moment, so blinded by desire.
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="/images/img1.png" class="corCopo">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li onclick="trocarCopo('/images/img1.png');cor('#017143')"><img src="/images/thumb1.png"></li>
+            <li onclick="trocarCopo('/images/img2.png');cor('#eb7495')"><img src="/images/thumb2.png"></li>
+            <li onclick="trocarCopo('/images/img3.png');cor('#d752b1')"><img src="/images/thumb3.png"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+        </ul>
+    </section>
+
+
+    <script>
+        function trocarCopo(corDoCopo){
+            document.querySelector(".corCopo").src = corDoCopo;
+        }
+        function cor(color){
+            const cor = document.querySelector(".circle");
+            cor.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
