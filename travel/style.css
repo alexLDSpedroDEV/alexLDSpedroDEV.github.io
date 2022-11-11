@@ -1,0 +1,326 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(32, 48, 143);
+    overflow: hidden;
+}
+header{
+    z-index: 1000;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    transition: 0.5s ease;
+}
+header .logo{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.9em;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+header .nav{
+    position: relative;
+
+}
+header .nav .navItens a{
+    color: rgb(255, 255, 255);
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 50px;
+    
+   
+}
+header .nav .navItens a:hover{
+    
+    border-bottom: 5px solid rgb(46, 0, 253);
+}
+
+.content{
+    z-index: 1000;
+    padding: 20px 200px;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contentBlue{
+    z-index: -700;
+    contain: '';
+    position: absolute;
+    background-color: rgba(3, 96, 251, 0.2);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.content .textbox{
+    width: 60vw;
+    max-width: 60vw;
+    display: none;
+}
+.content .textbox.active{
+    display: block;
+}
+.textbox h2{
+    font-size: 4.5em;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+.textbox span{
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+.textbox p{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    max-width: 50vw;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: rgb(235, 228, 228);
+}
+.textbox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 28px;
+    background: #ffffff;
+    color: rgb(23, 66, 158);
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 1s ease;
+}
+.textbox a:hover{
+    transform: translateX(25px);
+}
+.sci{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+video{
+    z-index: -1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-navigation{
+    z-index: 880;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0px);
+    margin: 12px;
+}   
+.slide-navigation .navbtn{
+    width: 12px;
+    height: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgb(255, 255, 255);
+    margin-left: 10px;
+}
+.slide-navigation .navbtn.active{
+    background-color: rgb(30, 199, 199);
+}
+.slide-navigation .navbtn:hover{
+    transform: scale(1.2);
+}
+.video{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.video.active{
+    clip-path: circle(150% at 0 50%);
+    transition: 2s ease;
+    transition-property: clip-path;
+}
+/* responsivo */
+.nav2{
+    display: none;
+}
+#close{
+    filter: invert(1);
+    display: none;
+}
+@media (max-width: 970px){
+    .content{
+        padding: 20px 100px;
+    }
+    
+    .nav{
+        display: none;
+    }
+    .nav2{
+        display: none;
+    }
+    .nav2 span{
+        z-index: 1000;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    #close{
+        filter: invert(1);
+        display: flex;
+    }
+    .nav2 span:hover{
+        transform: scale(1.2);
+        transition: 1s;
+    }
+    .navItens2{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(42, 28, 122);
+        width: 50vw;
+        height: 53vh;
+        left: 25%;
+        top: 30%;
+        align-items: center;
+    }
+    .navItens2 a{
+        
+        text-decoration: none;
+        color: white;
+        padding: 20px;
+        
+        
+    }
+}
+@media (max-width: 760px){
+    .textbox span{
+        font-weight: 400;
+        font-size: 1.0em;
+    }
+    .textbox p{      
+        max-width: 60vw;     
+        font-size: 0.9em;
+        
+    }
+    .textbox h2{
+        font-size: 3.6em;
+        font-weight: 800;
+    }
+}
+@media (max-width: 620px){
+    .content{
+        padding: 20px 50px;
+    }
+    .textbox span{
+        font-weight: 400;
+        font-size: 0.7em;
+    }
+    .textbox p{      
+        max-width: 60vw;     
+        font-size: 0.9em;
+        
+    }
+    .textbox h2{
+        font-size: 2.8em;
+        font-weight: 800;
+    }
+}
+@media (max-width: 509px){
+    header{
+        justify-content: space-around;
+        padding: 15px 20px;
+        
+    }
+    .content{
+        padding: 20px 20px;
+    }
+    .textbox span{
+        font-weight: 400;
+        font-size: 0.7em;
+    }
+    .textbox p{      
+        max-width: 60vw;     
+        font-size: 0.9em;
+        
+    }
+    .textbox h2{
+        font-size: 2.4em;
+        font-weight: 800;
+    }
+}
+@media (max-width: 519px){
+    .sci{
+        top: 88%;
+        right: 70%;
+        flex-direction: row;
+    }
+    .content .textbox{
+        width: 100%;
+        max-width: 80vw;
+    }
+    .textbox p {
+        max-width: 80vw;
+    }
+    
+}
+@media (max-width: 409px){
+    .sci{
+        width: 100vw;
+        top: 87%;
+        right: 0%;
+        justify-content: start;
+        padding: 10px 20px;
+        flex-direction: row;
+    }
+}
+@media (max-width: 314px){
+    .textbox h2{
+        font-size: 2em;
+    }
+}
+
+@media (max-height: 536px){
+    .content 
+    {    
+        height: 65vh;
+        margin-bottom: 15vh;
+    }
+    
+}
+@media (max-height: 450px ) and (max-width: 360px){
+
+    .sci{
+        
+        top: 92%;
+        
+    }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Viaje</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Travel</a>
+        <div class="nav">
+            <div class="navItens">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <div id="close">
+            <span class="material-symbols-outlined " onclick="abrir()">
+                menu
+            </span>
+        </div>
+        <div class="nav2">
+            <span class="material-symbols-outlined" onclick="fechar()">
+                close
+                </span>
+            <div class="navItens2">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </header>
+    <div class="contentBlue"></div>
+    <div class="content">
+
+        <video src="videos/video-4.mp4" autoplay muted loop class="video active"></video>
+        <video src="videos/video-1.mp4" autoplay muted loop class="video"></video>
+        <video src="videos/video-3.mp4" autoplay muted loop class="video"></video>
+        <video src="videos/video-5.mp4" autoplay muted loop class="video"></video>
+        <video src="videos/video-2.mp4" autoplay muted loop class="video"></video>
+
+        <div class="textbox active">
+            <h2>Wanderful<br><span>island</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="textbox">
+            <h2>surfing<br><span>Enjoy</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="textbox">
+            <h2>Adventure.<br><span>Off Road</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="textbox">
+            <h2>Nature<br><span>Relax</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+        <div class="textbox">
+            <h2>Road to car<br><span>Relax</span></h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.
+
+            </p>
+            <a href="#">Veja mais</a>
+        </div>
+    </div>
+    <ul class="sci">
+        <li><a href="#"><img src="imgs/facebook.png"></a></li>
+        <li><a href="#"><img src="imgs/instagram.png"></a></li>
+        <li><a href="#"><img src="imgs/twitter.png"></a></li>
+    </ul>
+    <div class="slide-navigation">
+        <div class="navbtn active"></div>
+        <div class="navbtn"></div>
+        <div class="navbtn"></div>
+        <div class="navbtn"></div>
+        <div class="navbtn"></div>
+    </div>
+
+
+    <script>
+        const btns = document.querySelectorAll(".navbtn");
+        const slider = document.querySelectorAll(".video");
+        const contend = document.querySelectorAll(".textbox");
+
+        
+        //responsivo
+        function abrir(){
+            document.querySelector(".nav2").style.display = 'flex';
+            document.querySelector("#close").style.display = 'none';
+            
+        }
+        function fechar(){
+            document.querySelector(".nav2").style.display = 'none';
+            document.querySelector("#close").style.display = 'flex';
+        }
+
+
+
+        //fim responsivo
+        var slideNav = function(manual){
+            
+            //está limpando todas as bolinhas 
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+                
+            })
+
+            slider.forEach((slide) => {
+                slide.classList.remove("active");
+            })
+
+            contend.forEach((contend) => {
+                contend.classList.remove("active");
+            })
+            //add a bolinha na manual(index do queryselector)
+            btns[manual].classList.add("active");
+            slider[manual].classList.add("active");
+            contend[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                slideNav(i)
+            })
+            
+        });
+    </script>
+</body>
+</html>
