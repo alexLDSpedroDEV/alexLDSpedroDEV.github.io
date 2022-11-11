@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Viaje</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Estacian</a>
+        <div class="nav">
+            <div class="navItens">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <div id="close">
+            <span class="material-symbols-outlined " onclick="abrir()">
+                menu
+            </span>
+        </div>
+        <div class="nav2">
+            <span class="material-symbols-outlined" onclick="fechar()">
+                close
+                </span>
+            <div class="navItens2">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Explore</a>
+                <a href="#">Galeria</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="contentBlue"></div>
+        <div class="content">
+
+            <img src="/imgs/img-2.jpg"  class="video active">
+            <img src="/imgs/img-1.jpg"  class="video">
+            <img src="/imgs/img-3.jpg"  class="video">
+            <img src="/imgs/img-4.jpg"  class="video">
+
+
+            <div class="textbox active">
+                <h2 class="summer">Summer</h2>
+                <p>
+                    O verão é uma das quatro estações do ano, caracterizada por ser a estação mais quente. Neste período, as temperaturas permanecem elevadas e os dias são mais longos do que os dias das outras estações. Geralmente, o verão é também o período do ano reservado às férias
+                </p>
+                <a href="#" class="btnSummer">Veja mais</a>
+            </div>
+            <div class="textbox">
+                <h2 class="primavera">spring<br></h2>
+                <p>
+                    O outono é a estação do ano que sucede o verão e antecede o inverno. Nas regiões de clima temperado ou subtropical é caraterizado por queda gradativa na temperatura e pelo amarelar e início da queda das folhas das árvores, que indica a passagem das estações.            </p>
+                <a class="btnPrimavera" href="#">Veja mais</a>
+            </div>
+            <div class="textbox">
+                <h2 class="outono">autumn</h2>
+                <p>
+                    O outono é a estação do ano que sucede o verão e antecede o inverno. Nas regiões de clima temperado ou subtropical é caraterizado por queda gradativa na temperatura e pelo amarelar e início da queda das folhas das árvores, que indica a passagem das estações.
+                </p>
+                <a class="btnOutono" href="#">Veja mais</a>
+            </div>
+            <div class="textbox">
+                <h2 class="inverno">Winter<br></h2>
+                <p>
+                    O outono é a estação do ano que sucede o verão e antecede o inverno. Nas regiões de clima temperado ou subtropical é caraterizado por queda gradativa na temperatura e pelo amarelar e início da queda das folhas das árvores, que indica a passagem das estações.
+                </p>
+                <a class="btnInverno" href="#">Veja mais</a>
+            </div>
+            
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="imgs/facebook.png"></a></li>
+            <li><a href="#"><img src="imgs/instagram.png"></a></li>
+            <li><a href="#"><img src="imgs/twitter.png"></a></li>
+        </ul>
+        <div class="slide-navigation">
+            <div class="navbtn navbtnSummer active"></div>
+            <div class="navbtn navbtnPrimavera"></div>
+            <div class="navbtn navbtnOutono"></div>
+            <div class="navbtn navbtnInverno"></div>
+            
+        </div>
+    </section>
+    
+
+
+    <script>
+        const btns = document.querySelectorAll(".navbtn");
+        const slider = document.querySelectorAll(".video");
+        const contend = document.querySelectorAll(".textbox");
+
+        
+        //responsivo
+        function abrir(){
+            document.querySelector(".nav2").style.display = 'flex';
+            document.querySelector("#close").style.display = 'none';
+            
+        }
+        function fechar(){
+            document.querySelector(".nav2").style.display = 'none';
+            document.querySelector("#close").style.display = 'flex';
+        }
+
+
+
+        //fim responsivo
+        var slideNav = function(manual){
+            
+            //está limpando todas as bolinhas 
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+                
+            })
+
+            slider.forEach((slide) => {
+                slide.classList.remove("active");
+            })
+
+            contend.forEach((contend) => {
+                contend.classList.remove("active");
+            })
+            //add a bolinha na manual(index do queryselector)
+            btns[manual].classList.add("active");
+            slider[manual].classList.add("active");
+            contend[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                slideNav(i)
+            })
+        });
+    </script>
+</body>
+</html>
