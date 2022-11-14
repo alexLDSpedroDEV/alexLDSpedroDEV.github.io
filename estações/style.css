@@ -189,7 +189,7 @@ header .nav .navItens a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
     margin: 12px;
 }   
 .slide-navigation .navbtn{
