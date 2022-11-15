@@ -8,8 +8,21 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
+    background-color: rgb(3, 0, 13);
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+    width: 10px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
 }
 header{
     z-index: 1000;
@@ -127,13 +140,13 @@ header .nav .navItens a:hover{
 }
 .textbox .inverno{
     background-color: red;
-    background-image: linear-gradient(to left,#4589ee, #001aff);
+    background-image: linear-gradient(to left,#35b0e0, #071066);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 .textbox .btnInverno{
-    background-image: linear-gradient(to left,#4589ee, #001aff);
+    background-image: linear-gradient(to left,#fefefe, #001aff);
     color: black;
 }
 .textbox a{
@@ -169,6 +182,7 @@ header .nav .navItens a:hover{
     margin: 12px 10px;
     transform: scale(0.6);
     filter: invert(1);
+    
 }
 
 .video{
@@ -182,6 +196,7 @@ header .nav .navItens a:hover{
     width: 100%;
     height: 100%;
     object-fit: fill;
+    
 }
 .slide-navigation{
     z-index: 880;
@@ -189,7 +204,7 @@ header .nav .navItens a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(-30px);
+    transform: translateY(-20px);
     margin: 12px;
 }   
 .slide-navigation .navbtn{
@@ -243,6 +258,87 @@ header .nav .navItens a:hover{
     transition: 2s ease;
     transition-property: clip-path;
 }
+.containesummer{
+    height: 100vh;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.sectionTitle{
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: white;
+}
+.containerSummer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 45%;
+}
+.containerSummer .img{
+    width: 50vw;
+    
+}
+.containerSummer div img{
+    width: 90%;
+
+}
+.containerSummer1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+.conteinerP p{
+    padding: 40px;
+}
+.containerSummer1 .img{
+    width: 50vw;
+    
+}
+.containerSummer1 div img{
+    width: 90%;
+
+}
+
+.conteinerP{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+}
+.laranja{
+    font-weight: 900;
+    background-image: linear-gradient(to left,#fffb00, #ff5e01);    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.verde{
+    font-weight: 900;
+    background-image: linear-gradient(to left,#00ff00, #01ffd5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.vermelho{
+    font-weight: 900;
+    background-image: linear-gradient(to left,#ff6701, #ff0000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.azul{
+    font-weight: 900;
+    background-image: linear-gradient(to left,#35b0e0, #071066);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 /* responsivo */
 .nav2{
     display: none;
@@ -299,6 +395,48 @@ header .nav .navItens a:hover{
         
         
     }
+    
+    .containerSummer{
+        height: 100vh;
+        width: 100vh;
+        display: grid;
+        margin: auto;
+
+        grid-template-columns: auto;
+        grid-template-rows: 50% auto;
+    }
+    .containerSummer {
+        height: 110%;
+    }
+    
+    .containerSummer .img {
+        width: 100%;
+        margin-bottom: 4vh;
+    }
+    .containerSummer div img {
+        width: 100%;
+    }
+    .containerSummer1{
+        height: 100vh;
+        width: 100vh;
+        display: grid;
+        margin: auto;
+
+        grid-template-columns: auto;
+        grid-template-rows: 50% auto;
+    }
+    .containerSummer1 {
+        height: 80%;
+    }
+    
+    .containerSummer1 .img {
+        width: 100%;
+        margin-bottom: 20vh;
+    }
+    .containerSummer1 div img {
+        width: 100%;
+    }
+    
 }
 @media (max-width: 760px){
     .textbox span{
@@ -326,7 +464,7 @@ header .nav .navItens a:hover{
         flex-direction: column;
     }
 }
-@media (max-width: 620px){
+@media (max-width: 670px){
     .content{
         padding: 20px 50px;
     }
@@ -343,8 +481,59 @@ header .nav .navItens a:hover{
         font-size: 2.8em;
         font-weight: 800;
     }
-}
-@media (max-width: 509px){
+    
+    .containerSummer div{
+        height: 58vh;
+    }
+    .containerSummer1 div{
+        height: 58vh;
+    }
+    .containerSummer div img {
+        width: 100%;
+        height: 50vh;
+        
+       
+    }
+    .containerSummer1 div img {
+        width: 99%;
+        height: 50vh;
+        
+       
+    }
+    .containerSummer{
+        width: 100vw;
+    }
+    #inverno{
+        width: 100vw;
+        height: 100vh;
+    }
+    .sectionTitle4{
+        width: 100%;
+    }
+    .containerSummer1{
+        width: 100%;
+        height: 90%;
+    }
+    .conteinerP{
+        width: 80%;
+        margin: auto;
+    }
+    .conteinerP p {
+        display: flex;
+        justify-content: end;
+        
+        color: white;
+        
+        
+        width: 100vw;
+    }
+    .containerSummer div {
+        height: 60vh;
+    }
+    .containerSummer1 div {
+        height: 60vh;
+    }
+@media (max-width: 589px){
     header{
         justify-content: space-around;
         padding: 15px 20px;
@@ -366,6 +555,15 @@ header .nav .navItens a:hover{
         font-size: 2.4em;
         font-weight: 800;
     }
+   
+    .containerSummer div {
+        height: 65vh;
+    }
+    
+    
+    .conteinerP {
+        width: 100%;
+    }
 }
 @media (max-width: 519px){
     .sci{
@@ -379,6 +577,10 @@ header .nav .navItens a:hover{
     }
     .textbox p {
         max-width: 80vw;
+    }
+    .sectionTitle {
+        
+        margin-top: 10vh;
     }
     
 }
@@ -413,4 +615,5 @@ header .nav .navItens a:hover{
         top: 92%;
         
     }
+}
 }
